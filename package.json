@@ -1,0 +1,9 @@
+{
+    "name": "file-mover",
+    "version": "1.0.0",
+    "scripts": {
+      "extract" : "npm run move-files && npm run move-to-time-folders",
+      "move-files": "powershell -ExecutionPolicy Bypass -File ./move-files.ps1",
+      "move-to-time-folders": "powershell -ExecutionPolicy Bypass -File move-to-time-folders.ps1"
+    }
+  }
